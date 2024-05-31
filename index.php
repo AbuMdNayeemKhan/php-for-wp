@@ -51,7 +51,7 @@
                 "Anika" => 12
             ];
 
-            var_dump($theGirls)
+            var_dump($theGirls);
 
             // foreach($theGirls as $name => $age){
             //     echo "<li>$name is $age years old</li>";
