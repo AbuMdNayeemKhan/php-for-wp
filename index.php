@@ -50,11 +50,34 @@
                 "Meghla" => 21, 
                 "Anika" => 12
             ];
-
-            var_dump($theGirls);
-
+            // var_dump($theGirls);
             // foreach($theGirls as $name => $age){
             //     echo "<li>$name is $age years old</li>";
             // }
+            
         ?>
     </ul>
+
+
+
+    <?php
+$fullDetails = [
+    [1, "Nayeem", 25, "Dhaka"],
+    [2, "Zioun", 21, "Dhaka"],
+    [3, "Tishat", 19, "Dhaka"],
+    [4, "Rafi", 14, "Borguna"],
+    [5, "Rohan", 12, "Barishal"],
+    [6, "Sohan", 2, "Barishal"],
+];
+echo "<table border='1'>";
+for ($x = 0; $x < count($fullDetails); $x++) {
+    echo "<tr>";
+        for ($i = 0; $i < count($fullDetails[$x]); $i++){
+            
+                echo "<td>". $fullDetails[$x][$i] ."</td>";
+            
+        }
+        echo "</tr>";
+    }
+echo "</table>";
+?>
